@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
+import React from 'react'
 
 function App() {
   const [search, setSearch] = useState('')
@@ -31,7 +32,7 @@ function App() {
     }
   }, [search])
 
-  const handleSearch = (e, term) => {
+  const handleSearch = (e: any, term: any) => {
     e.preventDefault()
     setSearch(term)
   }

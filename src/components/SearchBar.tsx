@@ -1,6 +1,7 @@
+import React from 'react';
 import { useState, useEffect } from 'react'
 
-function SearchBar(props) {
+function SearchBar(props: any) {
   const [searchTerm, setSearchTerm] = useState('')
 
   return (
